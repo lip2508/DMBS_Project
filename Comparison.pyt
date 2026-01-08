@@ -76,7 +76,6 @@ if __name__ == "__main__":
         ),
         RecoveryTechnique(
             name="MongoDB (WiredTiger, NoSQL)",
-            # WAL + checkpoints + replication-based recovery
             consistency_score=8.8,
             runtime_perf=8.5,
             recovery_perf=8.0,

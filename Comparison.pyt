@@ -1,9 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Dict
 
-# -----------------------------
-# Recovery technique evaluation model
-# -----------------------------
+
 @dataclass
 class RecoveryTechnique:
     name: str
@@ -47,9 +45,9 @@ def rank_techniques(evaluation: Dict[str, Dict[str, float]]) -> List[tuple]:
     return sorted(rankings, key=lambda x: x[1], reverse=True)
 
 
-# -----------------------------
+
 # Example instantiation (includes NoSQL DBMS)
-# -----------------------------
+
 if __name__ == "__main__":
     techniques = [
         RecoveryTechnique(
